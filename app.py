@@ -64,10 +64,7 @@ model, scaler, model_columns = load_artifacts()
 # Display Header Image (Resized and Centered)
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    try:
-        st.image("C:/Users/Tatai & Papai/.gemini/antigravity/brain/592a902b-1771-4d49-be96-5d5d00ad309e/medical_insurance_banner_1768725757652.png", use_column_width=True)
-    except Exception:
-        pass
+    st.image("header_img.png", width=300)
 
 st.markdown("<h1 class='main-header'>🏥 Medical Insurance Cost Prediction</h1>", unsafe_allow_html=True)
 st.markdown("<p class='sub-header'>Predict insurance charges with advanced Machine Learning models.</p>", unsafe_allow_html=True)
